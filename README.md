@@ -6,7 +6,7 @@
 
  ## Outlook
  ![Outlook Tracking Icon](OutlookIcon.png)
-
+___
  `extension/` contains the code for the Chrome extension that adds the icon + injecting image functionality.
  > **Note:** The `SERVER_URL` must be provided on line 2 of `extension/email.js`
  
