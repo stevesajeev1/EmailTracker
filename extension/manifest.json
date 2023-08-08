@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Email Tracker",
+    "version": "1.0",
+    "description": "Add email tracker pixel to Gmail and Outlook",
+    "icons": {
+        "16": "mail.png",
+        "32": "mail.png",
+        "48": "mail.png",
+        "128": "mail.png"
+    },
+    "author": "stevesajeev123@gmail.com",
+    "content_scripts": [
+        {
+            "js": ["email.js"],
+            "matches": [
+                "https://mail.google.com/mail/u/*",
+                "https://outlook.office.com/mail/*"
+            ]
+        }
+    ],
+    "externally_connectable": {
+        "matches": ["<all_urls>"]
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["spyglass.png"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
